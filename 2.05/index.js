@@ -49,6 +49,7 @@ app.post("/thecal",handleFReq)
 // now we can also render the response in the term of html formal as well
   // to do that snd the html code you want in the send() with the response object in the callback
 
+  
   function htmlFun(req,res){
     res.send(`<h1>Hello world</h1>`)
    // we can also send the index.html file directly 
