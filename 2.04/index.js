@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 
 
 // Status codes are numeric messages exchanged between a server and a client (like a web browser) when using a protocol like HTTP (Hypertext Transfer Protocol).
-//  These codes indicate whether a request was successful, failed, or needs further action
+// These codes indicate whether a request was successful, failed, or needs further action
 // INFORMATIONAL: The request was received and the process is continuing. (e.g., 100 Continue) (100 – 199)
 
 // SUCCESS:The request was successfully processed. (e.g., 200 OK) (200-299) // this is the by default satus code that we get if the server sends us some response
