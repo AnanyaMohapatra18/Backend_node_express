@@ -7,6 +7,7 @@ const app = express()
 // Body-parser is a popular middleware for Express.js, a web framework for Node.js, that simplifies parsing incoming HTTP request bodies
 const bodyParser = require('body-parser')
 
+
 const port = 3002
 
 // This is a middleware function specifically provided by the body-parser package, a popular third-party library for Express.
