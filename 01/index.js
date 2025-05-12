@@ -27,9 +27,9 @@ console.log(data);
 }
 
 
-// here readFile() is a function in node.js to read the contents of a file(a.txt).
+// here readFile() is a function in node.js to read the contents of a file (a.txt).
 // The "utf-8" parameter specifies that the file should be read as text using UTF-8 encoding. 
-//  The third parameter, theCallbk, is a callback function that will be called once the file is read.
+// The third parameter, theCallbk, is a callback function that will be called once the file is read.
 // So, when the file reading operation is complete, the theCallbk function will be executed with any error 
 // information (if there's an error) in the err parameter and the contents of the file in the data parameter.
 
