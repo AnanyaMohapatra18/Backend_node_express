@@ -18,7 +18,7 @@ const fs = require("fs")
 
 // "theCallbk" is a javaScript function , this function will be called if an error occurs or if a data gets 
 // retrieved.
-// It has two parameter "err" which stands for error and another one is data
+// It has two parameter "err" which stands for the error and another one is data
 // If there is an error "err" will contain information about it
 // Or if everything goes smoothly,"data" will contain the result.
 
