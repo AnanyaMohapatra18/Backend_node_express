@@ -1,7 +1,7 @@
 const express = require("express")
 
 const app = express()
-const port = 3003
+const port = 3000
 
 const bodyParser = require("body-parser")
 
@@ -15,10 +15,7 @@ app.use(bodyParser.json())
 
 // SUCCESS:The request was successfully processed. (e.g., 200 OK) (200-299) // this is the by default satus code that we get if the server sends us some response
 
-
-
 // REDIRECTION : Further action is needed to complete the request. The client should follow instructions from the server.  (300 - 399)
-
 
 //CLIENT ERROR: The request itself is wrong or invalid and cannot be completed by the server. (e.g., 404 Not Found) (400 - 499)
 
@@ -41,7 +38,7 @@ function add(req,res){
       const counter = req.body.counter
       console.log(req.body);
 
-      if (counter < 100000){
+      if (counter < 100){
         
         let finalSum = calcSum(counter)
       console.log(finalSum);
@@ -50,8 +47,8 @@ function add(req,res){
   
        res.send(answer)
       } else{
-        res.status(411).send("Error:It is very big number")
-        // res.status(411): This sets the status code of the HTTP response to 411. The status code 411 represents a "Length Required" error.
+        res.status(400).send("Error:It is very big number")
+        // res.status(400): This sets the status code of the HTTP response to 411. The status code 411 represents a "Length Required" error.
       }
       
   }
